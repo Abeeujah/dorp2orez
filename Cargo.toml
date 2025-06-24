@@ -30,6 +30,9 @@ tracing-subscriber = { version = "0.3.19", features = [
 unicode-segmentation = "1.12.0"
 uuid = { version = "1", features = ["v4"] }
 validator = "0.16"
+rand = { version = "0.8", features = ["std_rng"] }
+thiserror = "1"
+anyhow = "1"
 
 [dependencies.reqwest]
 version = "0.11"
@@ -57,6 +60,7 @@ quickcheck_macros = "0.9.1"
 tokio = { version = "1", features = ["macros", "rt"] }
 wiremock = "0.5"
 serde_json = "1"
+linkify = "0.9"
 
 [target.x86_64-unknown-linux-gnu]
 rustflags = ["-C", "linker=clang", "-C", "link-arg=-fuse-ld=lld"]
